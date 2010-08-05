@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='ja' xml:lang='ja'>
+<head>
+<title>TopController: index</title>
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+<meta content='text/css' http-equiv='Content-Style-Type' />
+<meta content='text/javascript' http-equiv='Content-Script-Type' />
+<link href='/stylesheets/application.css' rel='stylesheet' type='text/css' />
+<link href='/favicon.ico' rel='shortcut icon' />
+
+<link href="stylesheets/reset.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="stylesheets/basic.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
+<script src="/javascripts/prototype.js?1270010017" type="text/javascript"></script>
+<script src="/javascripts/effects.js?1270010017" type="text/javascript"></script>
+<script src="/javascripts/dragdrop.js?1270010017" type="text/javascript"></script>
+<script src="/javascripts/controls.js?1270010017" type="text/javascript"></script>
+<script src="/javascripts/application.js?1270010017" type="text/javascript"></script>
+
+</head>
+<body>
+<div id='header'>
+<div class="wrap">
+<h1><a href="/">Help me, hackers!</a></h1>
+<ul class='account'>
+<li>
+<a href="/"><img alt="14424182_2338889845_normal" height="16" src="http://a1.twimg.com/profile_images/525575524/14424182_2338889845_normal.jpg" style="vertical-align:middle" width="16" />machida(0)</a>
+</li>
+<li><a href="/account/edit">プロフィールを編集</a></li>
+<li><a href="/logout">ログアウト</a></li>
+</ul>
+</div>
+<div class='navs'>
+<ul class="tab wrap">
+<li><a href="/dashboard">ダッシュボード</a></li>
+<li class="carrent"><a href="/tasks">タスク</a></li>
+<li><a href="/projects">プロジェクト</a></li>
+<li><a href="/users">ユーザー</a></li>
+<li><a href="/jobs">ジョブボード</a></li>
+<li class='add_task'><a href="/tasks/new">タスク登録</a></li>
+</ul>
+<div class="hierarchy">
+<ol class="bread_crumbs wrap">
+<li><a href="">未解決のタスク</a></li>
+<li><a href="">報奨金付きタスク</a></li>
+</ol>
+</div>
+</div>
+</div>
+<div class='tasks_show' id='wrapper'>
+<div id='main'>
+<div id='flash'>
+</div>
+
+
+
+<ul class='tasks tasks_list'>
+<li class='task content free clearfix'>
+<div class='content'>
+<div class='main'>
+<div class='title'>
+<h2>HTMLファイルを指定してアンカーテキストの一覧を取得したい</h2>
+<div class='good' onclick="$('#task_125_vote_form').toggle()">
+<dl>
+<dt><span>good</span></dt>
+<dd class='count' id='task_125_good'>0</dd>
+</dl>
+</div>
+
+<form style="" method="post" id="task_125_vote_form" class="new_vote" action="/votes">
+<div style="margin: 0pt; padding: 0pt; display: inline;"><input type="hidden" value="4Ke422Bf5Pga94huXLVpTgsO3A94hISGDWAybJdjwvU=" name="authenticity_token"></div>
+<div class="vote">
+<p class="description">Retweetをすることで、このタスクにGood!ポイントが加算されます</p>
+<div class="text">
+<input type="hidden" value="126" name="vote[voteable_id]" id="task_126_voteable_id">
+<input type="hidden" value="Task" name="vote[voteable_type]" id="task_126_voteable_type">
+<input type="text" value="Good! RT @komagata Rubyで出来たCMS/Blogツール http://bit.ly/aUgM27 #hmhs" size="140" name="vote[comment]" maxlength="140" id="task_126_comment">
+</div>
+<div class="button"><input type="image" src="images/good_button.png"></div>
+</div>
+</form>
+</div>
+<dl class="license">
+<dt>ライセンス</dt>
+<dd><a href="/about/license#mit">MIT LICENSE</a></dd>
+</dl>
+
+
+<div class='description'>
+<p>http://ohotuku.jp/anchortxt_checker/
+http://ohotuku.jp/anchortxt_checker/?u=http%3A%2F%2Fyahoo.co.jp</p>
+
+<p>のページにあるような感じで、ファイルを指定して、
+アンカーテキストの一覧（画像ファイルの場合はaltのテキスト）を取得したいと思っています。
+公開したくないものなので、ここを使うのには抵抗があります。</p>
+
+<p>JavaScriptでできるのではないかと思うのですが、どうしたらいいものか。。。
+教えていただけますか？</p>
+
+<blockquote>
+
+<p>あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+
+</blockquote>
+
+</div>
+
+<ul class="tags">
+<li class="tag"><a href="/tasks/tag/%E3%83%90%E3%82%B0">バグ</a></li>
+<li class="tag"><a href="/tasks/tag/jquery-markedit">jquery-markedit</a></li>
+</ul>
+</div>
+<div class='sub information'>
+
+<dl>
+<dt class="bounty">報奨金</dt>
+<dd class="bounty">合計<span>21000</span>円</dd>
+</dl>
+
+<div class="counts">
+<ul class='goods'>
+<li class='count'>100</li>
+<li class='label'>GOODS!</li>
+</ul>
+<ul class='comments'>
+<li class='count'>0</li>
+<li class='label'>Comments</li>
+</ul>
+</div>
+<div class="project">
+<a href="" class="project clearfix"><span class='icon'><img alt="Good_face" src="http://a1.twimg.com/profile_images/70167950/good_face.png" /></span><span class='name'>iPhoneでスケジューラアプリを作ろう</span></a>
+</div>
+
+<dl>
+<dt class='language'>プログラム言語</dt>
+<dd class='language'><a href="/tasks/tag/javascript">JavaScript</a></dd>
+</dl>
+
+<a href="/komagata_fjord" class='person'><span class='icon'><img alt="Good_face" src="http://a1.twimg.com/profile_images/70167950/good_face.png" /></span><span class="state">HELP!</span><span class='name'>komagata_fjord</span></a>
+
+<div class='created_at'>1分以内前</div>
+</div>
+</div>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+<div class='task content solved free'>
+
+<div class='main'>
+ <div class='title'>
+<div class='good' onclick="$('#task_125_vote_form').toggle()">
+<ul>
+<li class='count' id='task_125_good'>0</li>
+</ul>
+</div>
+<h2></h2>
+
+<form action="/votes" class="new_vote" id="task_125_vote_form" method="post" style="display:none"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="4Ke422Bf5Pga94huXLVpTgsO3A94hISGDWAybJdjwvU=" /></div>
+<div class='text'>
+<input id="task_125_voteable_id" name="vote[voteable_id]" type="hidden" value="125" />
+<input id="task_125_voteable_type" name="vote[voteable_type]" type="hidden" value="Task" />
+<input id="task_125_comment" maxlength="140" name="vote[comment]" size="140" type="text" value="Good! RT @omosya HTMLファイルを指定してアンカーテキストの一覧を取得したい http://bit.ly/cSZsWk #hmhs" />
+</div>
+<div class='button'><input src="/images/good_button.gif?1278690509" type="image" /></div>
+<p class='center'>Retweetをすることで、このタスクにGood!ポイントが加算されます</p>
+
+</form>
+</div>
+</div>
+
+<div class='sub'>
+<div class='information'>
+<dl>
+<dt class='language'>プログラム言語</dt>
+<dd class='language'><a href="/tasks/language/javascript">JavaScript</a></dd>
+</dl>
+<ul class='retweet'>
+<li class='count'>0</li>
+
+<li class='label'>retweet</li>
+</ul>
+<ul class='comment'>
+<li class='count'>4</li>
+<li class='label'>コメント</li>
+</ul>
+<div class='person'>
+
+<ul>
+<li class='icon'><a href="/omosya"><img alt="Default_profile_0_normal" src="http://s.twimg.com/a/1280169527/images/default_profile_0_normal.png" /></a></li>
+<li class='name'><a href="/omosya">omosya</a></li>
+</ul>
+</div>
+<div class='created_at'>7日前</div>
+</div>
+</div>
+
+<div class='section'>
+<h3>コメント</h3>
+<ul class='comments'>
+<li class='comment correct' id='comment-301'>
+<div class='commenter'>
+<div class='good' onclick="$('#comment_301_vote_form').toggle()">
+<ul class='good'>
+<li class='count' id='comment_301_good'>0</li>
+
+<li class='label'>Good</li>
+</ul>
+</div>
+<div class='user'>
+<ul class='user'>
+<li class='icon'><a href="/m_satyr"><img alt="Murky-satyr_p_normal" src="http://a1.twimg.com/profile_images/58576888/murky-satyr_p_normal.gif" /></a></li>
+<li class='name'><a href="/m_satyr">m_satyr</a></li>
+</ul>
+
+</div>
+</div>
+<form action="/votes" class="new_vote" id="comment_301_vote_form" method="post" style="display:none"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="4Ke422Bf5Pga94huXLVpTgsO3A94hISGDWAybJdjwvU=" /></div>
+<div class='text'>
+<input id="comment_301_voteable_id" name="vote[voteable_id]" type="hidden" value="301" />
+<input id="comment_301_voteable_type" name="vote[voteable_type]" type="hidden" value="Comment" />
+<input id="comment_301_comment" maxlength="140" name="vote[comment]" size="140" type="text" value="Good! RT @m_satyr javascript:AnchorTextCheckerModoki:(function(){ var h = '... http://bit.ly/cSZsWk #hmhs" />
+</div>
+<div class='button'><input src="/images/good_button.gif?1278690509" type="image" /></div>
+
+<p class='center'>Retweetをすることで、このタスクにGood!ポイントが加算されます</p>
+</form>
+<div class='description'>
+<pre><code>javascript:AnchorTextCheckerModoki:(function(){&#x000A;var h = '&lt;table&gt;&lt;tr&gt;&lt;th&gt;link&lt;/th&gt;&lt;th&gt;text&lt;/th&gt;&lt;th&gt;alt&lt;/th&gt;&lt;/tr&gt;';&#x000A;for(var a, img, ls = document.links, i = -1; a = ls[++i];) h += (&#x000A;'&lt;tr&gt;&lt;td&gt;'+&#x000A;'&lt;a href="'+ a.href +'"&gt;'+ a.href +'&lt;/a&gt;'+&#x000A;'&lt;/td&gt;&lt;td&gt;'+&#x000A;(a.textContent || a.innerText) +&#x000A;'&lt;/td&gt;&lt;td&gt;'+&#x000A;((img = a.getElementsByTagName('img')[0]) ? img.alt : '') +&#x000A;'&lt;/td&gt;&lt;/tr&gt;');&#x000A;return h + '&lt;/table&gt;';&#x000A;})()&#x000A;</code></pre>
+
+
+<p>ブックマークレットで。</p>
+</div>
+</li>
+<li class='comment' id='comment-300'>
+<div class='commenter'>
+<div class='good' onclick="$('#comment_300_vote_form').toggle()">
+<ul class='good'>
+<li class='count' id='comment_300_good'>0</li>
+
+<li class='label'>Good</li>
+</ul>
+</div>
+<div class='user'>
+<ul class='user'>
+<li class='icon'><a href="/omosya"><img alt="Default_profile_0_normal" src="http://s.twimg.com/a/1280169527/images/default_profile_0_normal.png" /></a></li>
+<li class='name'><a href="/omosya">omosya</a></li>
+</ul>
+
+</div>
+</div>
+<form action="/votes" class="new_vote" id="comment_300_vote_form" method="post" style="display:none"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="4Ke422Bf5Pga94huXLVpTgsO3A94hISGDWAybJdjwvU=" /></div>
+<div class='text'>
+<input id="comment_300_voteable_id" name="vote[voteable_id]" type="hidden" value="300" />
+<input id="comment_300_voteable_type" name="vote[voteable_type]" type="hidden" value="Comment" />
+<input id="comment_300_comment" maxlength="140" name="vote[comment]" size="140" type="text" value="Good! RT @omosya ごめんなさいURLがくっついちゃいました。 http://ohotuku.jp/anchortxt_checker... http://bit.ly/cSZsWk #hmhs" />
+</div>
+<div class='button'><input src="/images/good_button.gif?1278690509" type="image" /></div>
+
+<p class='center'>Retweetをすることで、このタスクにGood!ポイントが加算されます</p>
+</form>
+<div class='description'>
+<p>ごめんなさいURLがくっついちゃいました。
+http://ohotuku.jp/anchortxt_checker/
+です。</p>
+</div>
+</li>
+<li class='comment' id='comment-302'>
+<div class='commenter'>
+
+<div class='good' onclick="$('#comment_302_vote_form').toggle()">
+<ul class='good'>
+<li class='count' id='comment_302_good'>0</li>
+<li class='label'>Good</li>
+</ul>
+</div>
+<div class='user'>
+<ul class='user'>
+
+<li class='icon'><a href="/komagata"><img alt="Good_face_normal" src="http://a1.twimg.com/profile_images/70167950/good_face_normal.png" /></a></li>
+<li class='name'><a href="/komagata">komagata</a></li>
+</ul>
+</div>
+</div>
+<form action="/votes" class="new_vote" id="comment_302_vote_form" method="post" style="display:none"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="4Ke422Bf5Pga94huXLVpTgsO3A94hISGDWAybJdjwvU=" /></div>
+<div class='text'>
+<input id="comment_302_voteable_id" name="vote[voteable_id]" type="hidden" value="302" />
+
+<input id="comment_302_voteable_type" name="vote[voteable_type]" type="hidden" value="Comment" />
+<input id="comment_302_comment" maxlength="140" name="vote[comment]" size="140" type="text" value="Good! RT @komagata @m_satyr 「来た！　はやい！　メインECMAScripterきた！　これで勝つる！」 http://bit.ly/cSZsWk #hmhs" />
+</div>
+<div class='button'><input src="/images/good_button.gif?1278690509" type="image" /></div>
+<p class='center'>Retweetをすることで、このタスクにGood!ポイントが加算されます</p>
+</form>
+<div class='description'><p>@m_satyr 「来た！　はやい！　メインECMAScripterきた！　これで勝つる！」</p></div>
+</li>
+
+<li class='comment' id='comment-303'>
+<div class='commenter'>
+<div class='good' onclick="$('#comment_303_vote_form').toggle()">
+<ul class='good'>
+<li class='count' id='comment_303_good'>0</li>
+<li class='label'>Good</li>
+</ul>
+</div>
+
+<div class='user'>
+<ul class='user'>
+<li class='icon'><a href="/omosya"><img alt="Default_profile_0_normal" src="http://s.twimg.com/a/1280169527/images/default_profile_0_normal.png" /></a></li>
+<li class='name'><a href="/omosya">omosya</a></li>
+</ul>
+</div>
+</div>
+<form action="/votes" class="new_vote" id="comment_303_vote_form" method="post" style="display:none"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="4Ke422Bf5Pga94huXLVpTgsO3A94hISGDWAybJdjwvU=" /></div>
+
+<div class='text'>
+<input id="comment_303_voteable_id" name="vote[voteable_id]" type="hidden" value="303" />
+<input id="comment_303_voteable_type" name="vote[voteable_type]" type="hidden" value="Comment" />
+<input id="comment_303_comment" maxlength="140" name="vote[comment]" size="140" type="text" value="Good! RT @omosya ありがとうございます！完璧です！ javascript勉強しようと思いながらなかなかできてないので 自分でできるよ... http://bit.ly/cSZsWk #hmhs" />
+</div>
+<div class='button'><input src="/images/good_button.gif?1278690509" type="image" /></div>
+<p class='center'>Retweetをすることで、このタスクにGood!ポイントが加算されます</p>
+</form>
+
+<div class='description'>
+<p>ありがとうございます！完璧です！
+javascript勉強しようと思いながらなかなかできてないので
+自分でできるようになるよう勉強します。</p>
+
+<p>Help me, hackers!すごいよ！</p>
+</div>
+</li>
+</ul>
+</div>
+
+<div class='section post'>
+
+<h3>コメントする</h3>
+<span>（<a href="http://blog.2310.net/archives/6" target="_blank">Markdown記法</a> が使えます）</span>
+<span>（コメントはTwitterにも飛びます）</span>
+<form action="/comments" class="new_comment" id="new_comment" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="4Ke422Bf5Pga94huXLVpTgsO3A94hISGDWAybJdjwvU=" /></div>
+
+<input id="comment_task_id" name="comment[task_id]" type="hidden" value="125" />
+<textarea cols="70" id="comment_description" name="comment[description]" rows="10"></textarea>
+
+<h4>プレビュー</h4>
+<div class='wrapper'>
+<div class='preview'></div>
+</div>
+<p>
+<input id="comment_submit" name="commit" type="submit" value="利用規約に同意してコメントする" />
+<a href="/about/terms" target="_blank">利用規約</a>
+</p>
+
+</form>
+</div>
+</div>
+</div>
+<div id='sub'>
+<div class='section'>
+<h3>言語別タスク数</h3>
+<ul class='tasks count_by_language'>
+
+<li class='language'><a href="/tasks/language/ruby">Ruby (54)</a></li>
+<li class='language'><a href="/tasks/language/javascript">JavaScript (26)</a></li>
+<li class='language'><a href="/tasks/language/php">PHP (11)</a></li>
+<li class='language'><a href="/tasks/language/css">CSS (8)</a></li>
+<li class='language'><a href="/tasks/language/japanese">日本語 (7)</a></li>
+<li class='language'><a href="/tasks/language/visualbasic">Visual Basic (3)</a></li>
+
+<li class='language'><a href="/tasks/language/cpp">C++ (3)</a></li>
+<li class='language'><a href="/tasks/language/html">HTML (2)</a></li>
+<li class='language'><a href="/tasks/language/common-lisp">Common Lisp (2)</a></li>
+<li class='language'><a href="/tasks/language/objective-c">Objective-C (1)</a></li>
+<li class='language'><a href="/tasks/language/python">Python (1)</a></li>
+<li class='language'><a href="/tasks/language/emacs-lisp">Emacs Lisp (1)</a></li>
+
+<li class='language'><a href="/tasks/language/shell">Shell (1)</a></li>
+<li class='language'><a href="/tasks/language/csharp">C# (1)</a></li>
+<li class='language'><a href="/tasks/language/c">C (1)</a></li>
+<li class='language'><a href="/tasks/language/vimscript">Vim script (1)</a></li>
+</ul>
+<div class='to_archive'></div>
+</div>
+
+<div class='section hint'>
+<h3>ヒント</h3>
+<ul>
+<li>
+<p>Help me, hackers!は「プログラム開発の依頼と解決のプラットフォーム」でもあります。プログラマーにとって解決したくなるようなコンピューター上の課題が集まるコミュニティを目指しています。</p>
+</li>
+<li>
+<p>あなたの会社のBTSに塩漬けになってるタスクがありませんか？</p>
+
+<p>Help me, hackers!に載せたら誰かが一瞬で解決しちゃうかも？</p>
+</li>
+<li>
+<p>勉強がてらプログラミングするも良し。賞金稼ぎを狙うも良し。</p>
+</li>
+<li>
+<p><a href="/account/edit">アカウント修正ページ</a>では好きな言語を登録して下さい。仕事で得意な言語ではなく、心の言語を一つだけ。</p>
+
+</li>
+<li>
+<p>ジャンクフード食系男子募集中！</p>
+</li>
+<li>
+<p>解決してもらうコツはプログラマーにとって面白いタスク設定にすること。前提とゴールは明確に。</p>
+</li>
+</ul>
+
+<div class='to_archive'>
+<p><a href="/about/hint">もっと詳しく</a></p>
+</div>
+</div>
+</div>
+</div>
+<div id='footer'>
+<ul class='links'>
+
+<li><a href="http://fjord.jp/tag/help-me-hackers">ブログ</a></li>
+<li><a href="http://fjord.jp/tag/help-me-hackers-how-to-use">使い方</a></li>
+<li><a href="http://fjord.jp/tag/help-me-hackers-hint">ヒント</a></li>
+<li><a href="http://fjord.jp/tag/code-dj">コードDJ</a></li>
+<li><a href="http://fjord.jp/tag/help-me-hackers-update">更新情報</a></li>
+<li><a href="/projects/1">開発予定</a></li>
+
+<li><a href="http://www.ustream.tv/channel/web%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%82%92%E4%BD%9C%E3%82%8B">開発生放送（平日18:30〜19:00）</a></li>
+<li><a href="http://fjord.jp/">運営</a></li>
+<li><a href="/about/terms">利用規約</a></li>
+<li><a href="http://fjord.jp/inquiry">お問い合わせ</a></li>
+</ul>
+<p class='copyright'>Copyright © <a href="http://fjord.jp">fjord,llc</a>. Created by <a href="http://twitter.com/machida">@machida</a> and <a href="http://twitter.com/komagata">@komagata</a>.<br />Help me, hackers! Version 20100501000000</p>
+
+</div>
+<script type='text/javascript'>
+//<![CDATA[
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-2927688-8");
+pageTracker._trackPageview();
+} catch(err) {}
+//]]>
+</script>
+<script src="/javascripts/markedit/showdown.js?1278690509" type="text/javascript"></script>
+<script src="/javascripts/markedit/markedit.lang.ja.js?1278690509" type="text/javascript"></script>
+<script src="/javascripts/markedit/jquery.markedit.js?1278690509" type="text/javascript"></script>
+
+<script src="/javascripts/mk.js?1278690509" type="text/javascript"></script>
+</body>
+</html>
