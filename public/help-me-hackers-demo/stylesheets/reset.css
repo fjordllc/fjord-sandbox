@@ -32,10 +32,6 @@ blockquote {
  /* --HTML-- */  
  html {
 	overflow-y:scroll;
-	border-top-width: 10px;
-	border-top-style: solid;
-	border-top-color: #E7E7E7;
-
  }  
    
  /* --BODY-- */  
@@ -46,16 +42,9 @@ blockquote {
 	line-height: 1.4;
 	font-family: 'メイリオ', "Lucida Sans Unicode", "Lucida Grande", Arial, Helvetica, "ヒラギノ丸ゴ Pro W4", HiraMaruPro-W4, Verdana, HiraMaruPro-W4, "ヒラギノ角ゴ Pro W3", HiraKakuPro-W3, Osaka, sans-serif;
 	font-size: 13px;
-	color: #565656;
-	background-color: #eeeeee;
+	color: #656565;
+	background-color: #EEEEEE;
  }  
-   
- /* for IE7 */  
- *+html body {  
-font-size: 14px;
-line-height: 1.7;
- }  
-   
    
  /* --OTHER TAGS-- */  
  a img, fieldset, img {  
@@ -68,6 +57,13 @@ line-height: 1.7;
 	margin:0;
 	padding:0;
  }  
+  
+ h1, h2, h3, h4, h5, h6, input {
+ 	font-family: 'メイリオ', "Lucida Sans Unicode", "Lucida Grande", Arial, Helvetica, HiraKakuPro-W3, HiraMaruPro-W4, "ヒラギノ角ゴ Pro W3","ヒラギノ丸ゴ Pro W4", Verdana,  Osaka, sans-serif;
+ }  
+ 
+ 
+
    
  abbr, acronym {  
  border:0;  
@@ -97,11 +93,6 @@ font-size:100%;
 font-weight:normal;
 line-height: 1;
  }  
- /* for IE6 */  
-* html h3 {
-font-weight:bold;
- }  
-   
  input, select, textarea{  
  font-size:100%;  
  font-family: "Lucida Sans Unicode","Lucida Grande",Arial,Helvetica,'メイリオ',"ヒラギノ丸ゴ Pro W4",HiraMaruPro-W4,"ヒラギノ角ゴ Pro W3",HiraKakuPro-W3,Osaka,sans-serif ;  
@@ -127,7 +118,7 @@ overflow: hidden
  }  
 
  a:link,a:visited {
-color: #2844ac;
+color: #1f8fb8;
  }  
  a:hover,a:active {
 color: #ec189a;

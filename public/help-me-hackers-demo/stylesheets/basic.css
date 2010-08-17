@@ -2,6 +2,23 @@
 /* CSS Document */
 
 
+span.icon img {
+	background-color: #FFFFFF;
+}
+span.star {
+	font-weight: normal;
+}
+span.star span {
+	color: #EC189A;
+	text-shadow:0px 0px 2px #ffffff;
+}
+span.name {
+	white-space:pre-wrap;
+	word-wrap:break-word;
+}
+
+
+
 .wrap {
 	clear: both;
 	width: 980px;
@@ -10,7 +27,12 @@
 }
 
 #header {
-	background-color: #f8f8f8;
+	font-family: 'メイリオ'	, "Lucida Sans Unicode", "Lucida Grande", Arial, Helvetica, HiraKakuPro-W3, HiraMaruPro-W4, "ヒラギノ角ゴ Pro W3","ヒラギノ丸ゴ Pro W4", Verdana,  Osaka, sans-serif;
+	background-color: #F9F9F9;
+	margin-bottom: 15px;
+	background: -moz-linear-gradient(#F9F9F9, #E7E7E7);
+	background: -moz-linear-gradient(#F9F9F9, #E7E7E7);
+	background: -moz-linear-gradient(#F9F9F9, #E7E7E7);
 }
 #header h1 {
 	float: left;
@@ -23,18 +45,25 @@
 }
 #header ul.account {
 	float: right;
-	background-color: #E7E7E7;
-	padding-right: 12px;
-	padding-bottom: 5px;
-	padding-left: 12px;
-	-webkit-border-radius: 0px 0px 12px 12px;
-	-moz-border-radius: 0px 0px 12px 12px;
-	border-radius: 0px 0px 12px 12px;
+	padding-right: 10px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
 	font-size: 11px;
+	padding-top: 3px;
+	margin-top: 8px;
+	background-color: #e7e7e7;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#F9F9F9), to(#efeeee));
+	background: -moz-linear-gradient(#F9F9F9, #efeeee);
+	-pie-background: linear-gradient(#F9F9F9, #efeeee);
+	border: 1px solid #cccccc;
 }
 #header ul.account li {
 	display: block;
 	float: left;
+	white-space: nowrap;
 }
 #header ul.account li img {
 	margin-right: 5px;
@@ -43,26 +72,27 @@
 	display: block;
 	white-space: nowrap;
 	float: left;
-	padding-top: 3px;
-	padding-right: 8px;
-	padding-bottom: 3px;
-	padding-left: 8px;
 	text-decoration: none;
 	font-weight: bold;
-	color: #565656;
+	color: #656565;
+	margin-right: 8px;
 }
 #header ul.account li a:link,
 #header ul.account li a:visited {
-	border: 1px solid #E7E7E7;
+	padding-top: 4px;
+	padding-right: 9px;
+	padding-bottom: 4px;
+	padding-left: 9px;
+	margin: 1px;
 }
 #header ul.account li a:hover,
 #header ul.account li a:active {
 	text-shadow:1px 1px 0px #ffffff;
 	-webkit-box-shadow: #fde217 0px 0px 3px;
 	-moz-box-shadow: #fde217 0px 0px 3px;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
 	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f3f3f3), to(#dddddd));
 	background: -moz-linear-gradient(#f3f3f3, #dddddd);
 	-pie-background: linear-gradient(#f3f3f3, #dddddd);
@@ -70,18 +100,25 @@
 	-webkit-box-shadow: #c9c9c9 1px 1px 2px;
 	-moz-box-shadow: #c9c9c9 1px 1px 2px;
 	border: 1px solid #cccccc;
-	color: #565656;
+	color: #656565;
+	padding-top: 3px;
+	padding-right: 8px;
+	padding-bottom: 3px;
+	padding-left: 8px;
 }
 #header div.navs {
-	padding-bottom: 50px;
-	padding-top: 10px;
 	clear: both;
-	margin-bottom: -25px;
-	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#dbdbdb), to(#eeeeee));
-	background: -moz-linear-gradient(#dbdbdb, #eeeeee);
-	-pie-background: linear-gradient(#dbdbdb, #eeeeee);
+	background-color: #d0d0d0;
+	background: -moz-linear-gradient(center top, #ccc, #cecece 15%, #d0d0d0 50%, #d0d0d0 80%, #ccc 90%, #b8b8b8);
+	background: -webkit-gradient(linear, center top, center bottom, from(#ccc), color-stop(15%, #cecece), color-stop(50%, #d0d0d0), color-stop(85%, #aeaeae), to(#aaa)); 
 }
-#header div.navs ul.tab a {
+#header div.navs div.tab {
+	padding-top: 10px;
+	background-image: url(../images/tab.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+#header div.navs div.tab a {
 	display: block;
 	text-decoration: none;
 	font-size: 15px;
@@ -89,52 +126,36 @@
 	white-space: nowrap;
 	font-weight: bold;
 }
-#header div.navs ul.tab a:link,
-#header div.navs ul.tab a:visited {
-	margin-top: -1px;
-	color: #565656;
-	padding-top: 1px;
-	padding-right: 18px;
-	text-shadow:1px 1px 1px #FFFFFF;
+#header div.navs div.tab a:link,
+#header div.navs div.tab a:visited {
+	color: #656565;
+	padding-right: 17px;
+	text-shadow:-1px -1px 0px #FFFFFF;
 }
-#header div.navs ul.tab a:hover,
-#header div.navs ul.tab a:active {
-	margin-top: -2px;
+#header div.navs div.tab a:hover,
+#header div.navs div.tab a:active {
 	display: block;
-	background-color: #888888;
-	border-right-width: 1px;
-	border-right-style: solid;
-	border-right-color: #d3d3d3;
-	border-top-width: 1px;
-	border-top-style: solid;
-	border-top-color: #dbdada;
+	background-color: #0097ce;
 	-webkit-border-radius: 5px 5px 0px 0px;
 	-moz-border-radius: 5px 5px 0px 0px;
 	border-radius: 5px 5px 0px 0px;
 	padding-right: 17px;
 	color: #ececec;
-	text-shadow:1px 1px 0px #666666;
-	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#a8a8a8), to(#888888));
-	background: -moz-linear-gradient(#a8a8a8, #888888);
-	-pie-background: linear-gradient(#a8a8a8, #888888);
+	text-shadow:-1px -1px 0px #666666;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#96bdcc), to(#83afbf));
+	background: -moz-linear-gradient(#96bdcc, #83afbf);
+	-pie-background: linear-gradient(#96bdcc, #83afbf);
 }
-#header div.navs ul.tab li.carrent {
-	margin-top: -1px;
+#header div.navs div.tab li.carrent {
 	display: block;
 	background-color: #f9f9f9;
-	border-right-width: 1px;
-	border-right-style: solid;
-	border-right-color: #d3d3d3;
-	border-top-width: 1px;
-	border-top-style: solid;
-	border-top-color: #dbdada;
 	-webkit-border-radius: 5px 5px 0px 0px;
 	-moz-border-radius: 5px 5px 0px 0px;
 	border-radius: 5px 5px 0px 0px;
 	color: #ec189a;
-	text-shadow:1px 1px 1px #FFFFFF;
+	text-shadow:-1px -1px 1px #FFFFFF;
 }
-#header div.navs ul.tab li.carrent a {
+#header div.navs div.tab li.carrent a {
 	margin-top: 0px;
 	border: none;
 	-webkit-border-radius: 5px 5px 0px 0px;
@@ -149,27 +170,27 @@
 	background: -moz-linear-gradient(#ffffff, #f9f9f9);
 	-pie-background: linear-gradient(#ffffff, #f9f9f9);
 }
-#header div.navs ul.tab li.carrent a:link,
-#header div.navs ul.tab li.carrent a:visited {
+#header div.navs div.tab li.carrent a:link,
+#header div.navs div.tab li.carrent a:visited {
 	text-shadow:none;
-	color: #565656;
+	color: #656565;
 }
-#header div.navs ul.tab li.carrent a:hover,
-#header div.navs ul.tab li.carrent a:active {
-	text-shadow:0px 0px 5px #fde217;
+#header div.navs div.tab li.carrent a:hover,
+#header div.navs div.tab li.carrent a:active {
+	text-shadow:0px 0px 1px #cccccc;
 	color: #EC189A;
 }
-#header div.navs ul.tab li {
+#header div.navs div.tab li {
 	display: block;
 	float: left;
-	line-height: 34px;
-	height: 34px;
+	line-height: 36px;
+	height: 36px;
+	margin-bottom: -1px;
+	margin-right: 2px;
 }
 #header div.hierarchy {
 	font-size: 13px;
 	font-weight: bold;
-	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#F9F9F9), to(#efeeee));
-	background: -moz-linear-gradient(#F9F9F9, #efeeee);
 	-pie-background: linear-gradient(#F9F9F9, #efeeee);
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
@@ -178,8 +199,13 @@
 	line-height: 24px;
 	padding-top: 8px;
 	padding-bottom: 8px;
-	-webkit-box-shadow: #d8d8d8 0px 0px 10px;
+	-webkit-box-shadow: #d8d8d8 0px 0px 5px;
 	box-shadow: #d8d8d8 0px 0px 10px;
+	background-color: -moz-linear-gradient;
+	background-color:#f9f9f9;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #aaa;
 	}
 #header div.hierarchy li {
 	display: inline;
@@ -191,7 +217,7 @@
 	padding-right: 12px;
 	padding-left: 12px;
 	text-decoration: none;
-	color: #565656;
+	color: #656565;
 	}
 #header div.hierarchy li a:link,
 #header div.hierarchy li a:visited {
@@ -213,7 +239,7 @@
 	-webkit-box-shadow: #c9c9c9 1px 1px 2px;
 	-moz-box-shadow: #c9c9c9 1px 1px 2px;
 	border: 1px solid #cccccc;
-	color: #565656;
+	color: #656565;
 	}
 #wrapper {
 	clear: both;
@@ -225,7 +251,7 @@
 #wrapper div.eye_catch {
 	background-color: #FFFFFF;
 	height: 200px;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 	-webkit-border-radius: 12px;
 	-moz-border-radius: 12px;
 	border-radius: 12px;
@@ -238,80 +264,77 @@
 #main {
 	clear: both;
 	float: left;
-	width: 750px;
+	width: 730px;
 }
 .task {
 	display: block;
 	clear: both;
-	margin-bottom: 35px;
+	margin-bottom: 25px;
 }
-.task div.content {
+.task div.content,
+.comments div.content {
 	float: right;
-	width: 687px;
-	background-color: #f9f9f9;
-	border: 1px solid #dddddd;
+	width: 727px;
+	border: 1px solid #d0d0d0;
 	-webkit-border-radius: 12px;
 	-moz-border-radius: 12px;
 	border-radius: 12px;
 	-webkit-box-shadow: #dcdcdc 0px 0px 5px;
 	-moz-box-shadow: #dcdcdc 0px 0px 5px;
 	box-shadow: #dcdcdc 0px 0px 5px;
-	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#f8f8f8));
-	background: -moz-linear-gradient(#ffffff, #f8f8f8);
-	-pie-background: linear-gradient(#ffffff, #f8f8f8);
-}
-.tasks_show .task div.content {
-	width: 747px;
+	background-color: #f9f9f9;
+	background-image: url(../images/task_line.png);
+	background-repeat: repeat-y;
+	background-position: 165px top;
 }
 .task div.content div.main {
 	float: right;
-	width: 516px;
-	min-height: 270px;
+	width: 560px;
+	min-height: 220px;
 	height: auto;
 	border-left-width: 1px;
 	border-left-style: solid;
-	border-left-color: #dddddd;
-}
-.tasks_show .tasks div.content div.main {
-	width: 576px;
+	border-left-color: #d9d9d9;
 }
 .task div.content div.main .title {
 	font-size: 18px;
 	line-height: 1.3;
 	font-weight: bold;
 	display: block;
-	padding-bottom: 18px;
-	background-image: url(../images/task_title.gif);
-	background-repeat: repeat-x;
-	background-position: left bottom;
-	-webkit-box-shadow: #dcdcdc 0px 2px 2px;
-	-moz-box-shadow: #dcdcdc 0px 2px 2px;
-	box-shadow: #dcdcdc 0px 2px 2px;
-}
-.tasks li.solved div.content div.main .title {
-	padding-bottom: 0px;
-	border-bottom-width: 18px;
-	border-bottom-style: solid;
-	border-bottom-color: #e7e7e7;
-	background-image: none;
+	font-family: 'メイリオ', "Lucida Sans Unicode", "Lucida Grande", Arial, Helvetica, HiraKakuPro-W3, HiraMaruPro-W4, "ヒラギノ角ゴ Pro W3","ヒラギノ丸ゴ Pro W4", Verdana,  Osaka, sans-serif;
 }
 .task div.content div.main .title a {
 	display: block;
 	padding-right: 12px;
 	padding-left: 12px;
-	padding-top: 12px;
-	padding-bottom: 10px;
-	text-shadow:1px 1px 0px #FFFFFF;
+	padding-top: 8px;
+	padding-bottom: 6px;
 	-webkit-border-radius: 0px 12px 0px 0px;
 	-moz-border-radius: 0px 12px 0px 0px;
 	border-radius: 0px 12px 0px 0px;
 }
-div.tasks_show .task div.content div.main .title {
+
+
+div.tasks_show .task div.content,
+.comments div.content {
+	background-image: none;
+}
+
+div.tasks_show .task div.content div.main {
+	float: none;
+	width: 100%;
+	min-height: 300px;
+	height: auto;
+	border: none;
+}
+
+
+div.tasks_show div.content div.main .title {
 	display: block;
-	padding-right: 12px;
-	padding-left: 12px;
+	padding-right: 15px;
+	padding-left: 15px;
 	padding-top: 12px;
-	padding-bottom: 23px;
+	padding-bottom: 10px;
 	-webkit-border-radius: 0px 12px 0px 0px;
 	-moz-border-radius: 0px 12px 0px 0px;
 	border-radius: 0px 12px 0px 0px;
@@ -319,12 +342,21 @@ div.tasks_show .task div.content div.main .title {
 	-moz-box-shadow: #dcdcdc 0px 2px 2px;
 	box-shadow: #dcdcdc 0px 2px 2px;
 }
-div.tasks_show .task div.content div.main .title h2 {
+div.tasks_show div.content div.main .title h2 {
 	text-shadow:1px 1px 0px #FFFFFF;
 }
-div.tasks_show .task div.content div.main .title div.good {
+.task div.content div.main div.state {
 	display: block;
-	background-color: #F3F3F3;
+	background-image: url(../images/state.png);
+	height: 12px;
+	background-color: #f0fe17;
+}
+.solved div.content div.main div.state {
+	background-color: #CCC;
+}
+div.tasks_show .title div.good {
+	display: block;
+	background-color: #fff;
 	height: 45px;
 	width: 45px;
 	float: right;
@@ -341,38 +373,45 @@ div.tasks_show .task div.content div.main .title div.good {
 	border-right-style: solid;
 	border-bottom-style: solid;
 	border-left-style: solid;
-	border-top-color: #EEEEEE;
-	border-right-color: #D3D3D3;
-	border-bottom-color: #D3D3D3;
-	border-left-color: #EEEEEE;
-	-webkit-box-shadow: #dcdcdc 1px 1px 1px;
-	-moz-box-shadow: #dcdcdc 1px 1px 1px;
-	box-shadow: #dcdcdc 1px 1px 1px;
-	margin-bottom: 5px;
+	border-top-color: #e0e0e0;
+	border-right-color: #b0b0b0;
+	border-bottom-color: #b0b0b0;
+	border-left-color: #e0e0e0;
+	-webkit-box-shadow: #ededed 1px 1px 1px;
+	-moz-box-shadow: #ccc 1px 1px 1px;
+	box-shadow: #ededed 1px 1px 1px;
 }
-div.tasks_show .task div.content div.main .title div.good dt {
+div.tasks_show .title div.good:hover {
+	background-color: #e7e7e7;
+	border-top-color: #e0e0e0;
+	border-right-color: #b0b0b0;
+	border-bottom-color: #b0b0b0;
+	border-left-color: #e0e0e0;
+}
+div.tasks_show .title div.good dt {
 	display: block;
-	font-size: 10px;
+	font-size: 9px;
 	text-align: center;
 	height: 32px;
-	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#9dede6), to(#40c6bb));
-	background: -moz-linear-gradient(#9dede6, #40c6bb);
-	-pie-background: linear-gradient(#9dede6, #40c6bb);
+	background-color:#3b99bb;
 	-webkit-border-radius: 6px 6px 0px 0px;
 	-moz-border-radius: 6px 6px 0px 0px;
 	border-radius: 6px 6px 0px 0px;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#7bc8e4), to(#3b99bb));
+	background: -moz-linear-gradient(#7bc8e4, #3b99bb);
+	-pie-background: linear-gradient(#7bc8e4, #3b99bb);
 }
-div.tasks_show .task div.content div.main .title div.good dt span {
+div.tasks_show .title div.good dt span {
 	display: block;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-image: url(../images/good.png);
-	line-height: 29px;
-	height: 29px;
-	padding-bottom: 3px;
+	line-height: 27px;
+	height: 27px;
+	padding-bottom: 5px;
 	color: #ec189a;
 }
-div.tasks_show .task div.content div.main .title div.good dd {
+div.tasks_show .title div.good dd {
 	display: block;
 	font-size: 9px;
 	text-align: center;
@@ -383,136 +422,22 @@ div.tasks_show .task div.content div.main .title div.good dd {
 	-webkit-border-radius: 0px 0px 6px 6px;
 	-moz-border-radius: 0px 0px 6px 6px;
 	border-radius: 0px 0px 6px 6px;
-}
-div.tasks_show .tasks div.content div.main .title h2 {
-	display: block;
-	line-height: 1.3;
-	font-weight: bold;
-	float: left;
-	width: 475px;
-	font-size: 20px;
-	margin-bottom: 5px;
-}
-div.tasks_show .tasks div.content div.main .title form {
-	padding-top: 30px;
-	background-image: url(../images/arrow.png);
-	background-repeat: no-repeat;
-	background-position: 508px -75px;
-	clear: both;
-	padding-bottom: 10px;
-}
-div.tasks_show .tasks div.content div.main .title form div.vote {
-	display: block;
-	font-size: 12px;
-	clear: both;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	border-radius: 8px;
-	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#eeeeee), to(#e0e0e0));
-	background: -moz-linear-gradient(#eeeeee, #e0e0e0);
-	-pie-background: linear-gradient(#eeeeee, #e0e0e0);
-	padding-top: 8px;
-	padding-right: 10px;
-	padding-bottom: 8px;
-	padding-left: 10px;
-	-webkit-box-shadow: #dcdcdc 1px 1px 2px;
-	-moz-box-shadow: #dcdcdc 1px 1px 2px;
-	box-shadow: #dcdcdc 1px 1px 2px;
-	border-top-width: 1px;
-	border-right-width: 1px;
-	border-bottom-width: 1px;
-	border-left-width: 1px;
-	border-top-style: solid;
-	border-right-style: solid;
-	border-bottom-style: solid;
-	border-left-style: solid;
-	border-top-color: #ececec;
-	border-right-color: #CCCCCC;
-	border-bottom-color: #CCCCCC;
-	border-left-color: #ececec;
-}
-div.tasks_show .tasks div.content div.main .title form div.vote div.text {
-	width: 467px;
-	float: left;
-}
-div.tasks_show .tasks div.content div.main .title form div.vote div.text input {
-	display: block;
-	width: 467px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	background:none repeat scroll 0 0 #FCFCFC;
-	border-color:#CCCCCC #EEEEEE #EEEEEE #CCCCCC;
-	border-style:solid;
-	border-width:1px;
-	font-size: 13px;
-	line-height: 18px;
-	height: 18px;
-	padding-top: 3px;
-	padding-right: 2px;
-	padding-bottom: 3px;
-	padding-left: 2px;
-	background: -webkit-gradient(linear, 0 0, 0 5px, from(#e1e1e1), to(#f3f3f3));
-	background: -moz-linear-gradient(#e1e1e1, #f3f3f3 7%);
-	-pie-background: linear-gradient(#e1e1e1, #f3f3f3 7%);
-}
-div.tasks_show .tasks div.content div.main .title form div.vote div.text input:focus {
-	background:none repeat scroll 0 0 #FCFCFC;
-	background: -webkit-gradient(linear, 0 0, 0 5px, from(#e1e1e1), to(#ffffff));
-	background: -moz-linear-gradient(#e1e1e1, #ffffff 4%);
-	-pie-background: linear-gradient(#e1e1e1, #ffffff 4%);
-}
-div.tasks_show .tasks div.content div.main .title form div.vote div.button {
-	width: 37px;
-	float: right;
-}
-div.tasks_show .tasks div.content div.main .title form div.vote div.button input {
-	width: 35px;
-	height: 24px;
-	background-color: #666666;
-	display: block;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	border-top-width: 1px;
-	border-right-width: 1px;
-	border-bottom-width: 1px;
-	border-left-width: 1px;
-	border-top-style: solid;
-	border-right-style: solid;
-	border-bottom-style: solid;
-	border-left-style: solid;
-	border-top-color: #999999;
-	border-right-color: #444444;
-	border-bottom-color: #444444;
-	border-left-color: #999999;
-	-webkit-box-shadow: #999999 1px 1px 1px;
-	-moz-box-shadow: #999999 1px 1px 1px;
-	box-shadow: #999999 1px 1px 1px;
 	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#767676), to(#444444));
 	background: -moz-linear-gradient(#767676, #444444);
 	-pie-background: linear-gradient(#767676, #444444);
 }
-div.tasks_show .tasks div.content div.main .title form div.vote div.button input:focus {
-	background-color: #666666;
-	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fde217), to(#fde217));
-	background: -moz-linear-gradient(#fffa70, #fde217);
-	-pie-background: linear-gradient(#fffa70, #fde217);
-	box-shadow: #fde217 0px 0px 3px;
-	-webkit-box-shadow: #fde217 0px 0px 3px;
-	-moz-box-shadow: #fde217 0px 0px 3px;
-	border: 1px solid #eed415;
-}
-div.tasks_show .tasks div.content div.main .title form div.vote p.description {
+div.tasks_show div.content div.main .title h2 {
 	display: block;
-	clear: both;
-	font-size: 11px;
-	text-align: center;
-	padding-bottom: 6px;
+	line-height: 1.3;
+	font-weight: bold;
+	float: left;
+	width: 635px;
+	font-size: 22px;
 }
 .task div.content div.main .title a:link,
 .task div.content div.main .title a:visited {
 	text-decoration: none;
+	color: #656565;
 }
 .task div.content div.main .title a:hover,
 .task div.content div.main .title a:active {
@@ -522,18 +447,58 @@ div.tasks_show .tasks div.content div.main .title form div.vote p.description {
 	background-image: url(../images/sand.gif);
 	background-repeat: repeat;
 }
-.task div.content div.main div.description {
+div.content div.main div.description {
 	line-height: 1.5;
 	padding-right: 12px;
 	padding-left: 12px;
-	padding-top: 12px;
+	padding-top: 10px;
+	background-repeat: repeat-x;
+	background-position: 0px 0px;
 }
-.task div.content div.main div.description p {
+div.tasks_show div.content div.main div.description {
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 15px;
+}
+div.content div.main div.description h1 {
+	line-height: 1.3;
+	margin-bottom: 1em;
+	font-size: 22px;
+	font-weight: bold;
+	display: block;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #3b99bb;
+	font-family:Garamond,"Times New Roman","Hiragino Mincho Pro","ヒラギノ明朝 Pro W6","ＤＦＰ極太明朝体","ＤＦ極太明朝体","HG平成明朝体W9","平成明朝","ＭＳ Ｐ明朝",serif;
+}
+div.content div.main div.description h2 {
+	line-height: 28px;
+	margin-bottom: 1.1em;
+	font-size: 18px;
+	font-weight: bold;
+	background-image: url(../images/description_h2.gif);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	padding-left: 20px;
+}
+div.content div.main div.description h3 {
+	line-height: 1.3;
+	margin-bottom: 1.2em;
+	font-size: 16px;
+	font-weight: bold;
+}
+div.content div.main div.description h4 {
+	line-height: 1.3;
+	margin-bottom: 1.3em;
+	font-size: 14px;
+	font-weight: bold;
+}
+div.content div.main div.description p {
 	line-height: 1.7;
 	margin-bottom: 1.5em;
 	font-size: 14px;
 }
-.task div.content div.main div.description blockquote {
+div.content div.main div.description blockquote {
 	line-height: 1.7;
 	margin-bottom: 1.5em;
 	font-size: 14px;
@@ -541,20 +506,53 @@ div.tasks_show .tasks div.content div.main .title form div.vote p.description {
 	padding-top: 8px;
 	padding-right: 12px;
 	padding-bottom: 8px;
-	padding-left: 12px;
-	border-left-width: 6px;
-	border-left-style: solid;
-	border-left-color: #999999;
+	padding-left: 15px;
+	background-image: url(../images/blockquote_stripe.png);
+	background-repeat: repeat-y;
+	background-position: 0px 0px;
 }
-.task div.content div.main div.description blockquote p:last-child {
+div.content div.main div.description ul,
+div.content div.main div.description ol {
+	margin-bottom: 1.5em;
+	display: block;
+	padding-left: 28px;
+}
+div.content div.main div.description ul {
+	list-style-type: disc;
+	list-style-position: outside;
+}
+div.content div.main div.description ol {
+	list-style-type: decimal;
+	list-style-position: outside;
+}
+
+div.content div.main div.description li {
+	margin-bottom: 8px;
+	line-height: 1.3;
+}
+div.content div.main div.description pre code {
+	background-color:#dfdfdf;
+	background-image:url("../images/pre_code.gif");
+	display:block;
+	font-size:12px;
+	line-height:20px;
+	margin-bottom:1.5em;
+	overflow:auto;
+	padding-left:27px;
+	color: #333333;
+}
+
+div.content div.main div.description blockquote p:last-child {
+	margin-bottom: 0em;
+}
+div.content div.main div.description blockquote li:last-child {
 	margin-bottom: 0em;
 }
 .task div.content div.main dl.license {
 	display: block;
 	clear: both;
-	padding-top: 10px;
+	padding-top: 5px;
 	padding-right: 15px;
-	padding-left: 15px;
 }
 .task div.content div.main dl.license dt {
 	display: none;
@@ -587,8 +585,8 @@ div.tasks_show .tasks div.content div.main .title form div.vote p.description {
 .task div.content div.main dl.license dd a:hover,
 .task div.content div.main dl.license dd a:active {
 	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fde217), to(#fde217));
-	background: -moz-linear-gradient(#fffa70, #fde217);
-	-pie-background: linear-gradient(#fffa70, #fde217);
+	background: -moz-linear-gradient(#fefa86, #fde217);
+	-pie-background: linear-gradient(#fefa86, #fde217);
 	box-shadow: #fde217 0px 0px 3px;
 	-webkit-box-shadow: #fde217 0px 0px 3px;
 	-moz-box-shadow: #fde217 0px 0px 3px;
@@ -596,45 +594,48 @@ div.tasks_show .tasks div.content div.main .title form div.vote p.description {
 }
 
 
-.task div.content div.sub {
+.task div.content div.sub,
+.comments div.content div.sub {
 	float: left;
 	width: 150px;
-	padding-right: 10px;
-	padding-left: 10px;
+	padding-right: 8px;
+	padding-left: 8px;
 	padding-top: 12px;
 	padding-bottom: 10px;
+	margin-right: -1px;
+	font-family: 'メイリオ', "Lucida Sans Unicode", "Lucida Grande", Arial, Helvetica, HiraKakuPro-W3, HiraMaruPro-W4, "ヒラギノ角ゴ Pro W3","ヒラギノ丸ゴ Pro W4", Verdana,  Osaka, sans-serif;
 }
 .task div.content div.sub div.counts {
 	text-align: center;
 	background-image: url(../images/counts.png);
 	background-repeat: no-repeat;
 	background-position: center top;
-	margin-bottom: 12px;
+	margin-bottom: 10px;
 }
 .task div.content div.sub div.counts ul {
 	float: left;
 	width: 73px;
-	padding-bottom: 5px;
+	padding-bottom: 3px;
 }
 .task div.content div.sub div.counts ul li.label {
-	font-size: 10px;
+	font-size: 8px;
 	font-weight: bold;
-	line-height: 10px;
+	line-height: 8px;
 }
 .task div.content div.sub div.counts ul li.count {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: bold;
-	line-height: 20px;
+	line-height: 17px;
 	padding-bottom: 3px;
 	display: block;
-	text-shadow:0px 0px 3px #f8f8f8;
+	text-shadow:-1px -1px 0px #fff;
 }
 .task div.content div.sub div.counts ul.goods {
 	border: 1px solid #80ded5;
-	background: #9dede6;
-	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#9dede6), to(#40c6bb));
-	background: -moz-linear-gradient(#9dede6, #40c6bb);
-	-pie-background: linear-gradient(#9dede6, #40c6bb);
+	background: #50bdb4;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#81ddd5), to(#50c3b9));
+	background: -moz-linear-gradient(#71f4e9, #36d6c8);
+	-pie-background: linear-gradient(#81ddd5, #50c3b9);
 	-webkit-border-radius: 14px 0px 0px 14px;
 	-moz-border-radius: 14px 0px 0px 14px;
 	border-radius: 14px 0px 0px 14px;
@@ -642,13 +643,13 @@ div.tasks_show .tasks div.content div.main .title form div.vote p.description {
 .task div.content div.sub div.counts  li.count {
 	background-image: url(../images/counts.png);
 	background-repeat: no-repeat;
-	padding-top: 6px;
+	padding-top: 5px;
 }
 .task div.content div.sub div.counts ul.goods li.count {
-	background-position: left 3px;
+	background-position: left 2px;
 }
 .task div.content div.sub div.counts ul.comments li.count {
-	background-position: right 3px;
+	background-position: right 2px;
 }
 .task div.content div.sub div.counts ul.comments {
 	border: 1px solid #c6ea20;
@@ -674,21 +675,21 @@ div.tasks_show .tasks div.content div.main .title form div.vote p.description {
 	-moz-border-radius: 12px;
 	border-radius: 12px;
 	line-height: 22px;
-	margin-bottom: 12px;
+	margin-bottom: 10px;
 }
 .task div.content div.sub dd.language a:link,
 .task div.content div.sub dd.language a:visited {
 	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#f2f2f2));
 	background: -moz-linear-gradient(#ffffff, #f2f2f2);
 	-pie-background: linear-gradient(#ffffff, #f2f2f2);
-	border: 1px solid #efefef;
-	color: #565656;
+	border: 1px solid #d0d0d0;
+	color: #656565;
 }
 .task div.content div.sub dd.language a:hover,
 .task div.content div.sub dd.language a:active {
 	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fde217), to(#fde217));
-	background: -moz-linear-gradient(#fffa70, #fde217);
-	-pie-background: linear-gradient(#fffa70, #fde217);
+	background: -moz-linear-gradient(#fefa86, #fde217);
+	-pie-background: linear-gradient(#fefa86, #fde217);
 	text-shadow:1px 1px 0px #ffffff;
 	-webkit-box-shadow: #fde217 0px 0px 3px;
 	-moz-box-shadow: #fde217 0px 0px 3px;
@@ -699,56 +700,17 @@ div.tasks_show .tasks div.content div.main .title form div.vote p.description {
 	display: block;
 	font-weight: bold;
 	background-image: url(../images/bounty.png);
-	line-height: 28px;
-	height: 27px;
-	margin-bottom: 12px;
-	padding-right: 12px;
-	padding-left: 12px;
+	line-height: 23px;
+	height: 23px;
+	margin-bottom: 10px;
+	padding-right: 15px;
+	padding-left: 15px;
 	color: #a2a2a2;
 	font-size: 13px;
-	padding-top: 3px;
-	text-align: center;
+	text-align: right;
+	padding-top: 2px;
 }
 
-.task div.content div.sub div.project {
-	clear: both;
-	font-size: 12px;
-	margin-bottom: 12px;
-	margin-right: -10px;
-	min-height:42px;
-	line-height: 1.4;
-	margin-left: -10px;
-}
-.task div.content div.sub div.project a {
-	clear: both;
-	display: block;
-	text-decoration: none !important;
-	background-color: #F0EFEF;
-}
-.task div.content div.sub a.project span.icon {
-	float: left;
-	margin-right: 5px;
-	display: block;
-}
-.task div.content div.sub a.project span.icon img {
-	height: 42px;
-	width: 42px;
-	border-top-style: none;
-	border-right-style: none;
-	border-bottom-style: none;
-	border-left-style: none;
-}
-.task div.content div.sub a.project span.name {
-	float: left;
-	display: block;
-	width: 117px;
-	font-size: 11px;
-	line-height: 17px;
-	padding-right: 5px;
-	font-weight: bold;
-	padding-top: 4px;
-	padding-bottom: 4px;
-}
 
 .task div.content div.sub dd.bounty span {
 	color: #ec189a;
@@ -765,10 +727,14 @@ div.tasks_show .tasks div.content div.main .title form div.vote p.description {
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
-	padding: 7px;
 	margin-bottom: 8px;
 	display: block;
 	text-decoration: none;
+	line-height: 1.3;
+	padding-top: 7px;
+	padding-right: 7px;
+	padding-bottom: 7px;
+	padding-left: 7px;
 }
 .task div.content div.sub a.person:link,
 .task div.content div.sub a.person:visited {
@@ -776,13 +742,13 @@ div.tasks_show .tasks div.content div.main .title form div.vote p.description {
 	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#eeeeee), to(#e0e0e0));
 	background: -moz-linear-gradient(#eeeeee, #e0e0e0);
 	-pie-background: linear-gradient(#eeeeee, #e0e0e0);
-	border: 1px solid #ececec;
+	border: 1px solid #d0d0d0;
 }
 .task div.content div.sub a.person:hover,
 .task div.content div.sub a.person:active {
 	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fde217), to(#fde217));
-	background: -moz-linear-gradient(#fffa70, #fde217);
-	-pie-background: linear-gradient(#fffa70, #fde217);
+	background: -moz-linear-gradient(#fefa86, #fde217);
+	-pie-background: linear-gradient(#fefa86, #fde217);
 	text-shadow:1px 1px 0px #ffffff;
 	-webkit-box-shadow: #fde217 0px 0px 3px;
 	-moz-box-shadow: #fde217 0px 0px 3px;
@@ -796,6 +762,9 @@ div.tasks_show .tasks div.content div.main .title form div.vote p.description {
 	float: left;
 	margin-right: 5px;
 	display: block;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 .task div.content div.sub a.person:link span.icon img,
 .task div.content div.sub a.person:visited span.icon img {
@@ -810,50 +779,57 @@ div.tasks_show .tasks div.content div.main .title form div.vote p.description {
 	box-shadow: #ec15ba 0px 0px 3px;
 	background-color: #FFFFFF;
 }
-.task div.content div.sub a.person span.state {
-	float: left;
-	font-size: 8px;
-	background-color: #76e3da;
-	margin-top: -3px;
-	font-weight: bold;
-	color: #FFFFFF;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	padding-top: 2px;
-	padding-right: 4px;
-	padding-bottom: 1px;
-	padding-left: 4px;
-	background-repeat: no-repeat;
-	background-position: left bottom;
-	display: block;
-	margin-left: -1px;
-}
-.solved div.content div.sub a.person span.state {
-	background-color: #dfdfdf;
-	color: #A2A2A2;
-}
-
-.task div.content div.sub a.person:hover span.state,
-.task div.content div.sub a.person:active span.state {
-	text-shadow:none;
-}
 .task div.content div.sub a.person span.name {
 	float: left;
-	font-size: 11px;
+	font-size: 10px;
 	display: block;
-	background-image: url(../images/state.png);
-	background-repeat: no-repeat;
-	background-position: 6px top;
-	padding-top: 3px;
 	width: 95px;
 	font-weight: bold;
-	color: #565656;
-}
-.solved div.content div.sub a.person span.name {
-	background-image: url(../images/state_solved.png);
+	color: #656565;
+	white-space:pre-wrap;
+	word-wrap:break-word;
 }
 
+
+
+
+
+.task div.content div.project {
+	margin-bottom: 2px;
+	background-color: #d0d0d0;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #aaa;
+	font-family: 'メイリオ', "Lucida Sans Unicode", "Lucida Grande", Arial, Helvetica, HiraKakuPro-W3, HiraMaruPro-W4, "ヒラギノ角ゴ Pro W3","ヒラギノ丸ゴ Pro W4", Verdana,  Osaka, sans-serif;
+	background: -moz-linear-gradient(center top, #ccc, #cecece 15%, #d0d0d0 50%, #cecece 85%, #ccc);
+	background: -webkit-gradient(linear, center top, center bottom, from(#ccc), color-stop(15%, #cecece), color-stop(50%, #d0d0d0), color-stop(85%, #cecece), to(#ccc)); 
+}
+.task div.content div.project a {
+	display: block;
+	text-decoration: none;
+	display: block;
+	font-size: 11px;
+	background-image: url(../images/tasks_project.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	color: #5a5a5a;
+	text-shadow:1px 1px 1px #aaa;
+	height: 25px;
+}
+.task div.content div.project a span.name {
+	padding-top: 4px;
+	padding-right: 15px;
+	padding-bottom: 6px;
+	padding-left: 15px;
+	background-image: url(../images/description.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	display: block;
+	height: 15px;
+	line-height: 15px;
+	font-weight: bold;
+	text-align: right;
+}
 
 
 
@@ -868,8 +844,8 @@ div.tasks_show .tasks div.content div.main .title form div.vote p.description {
 	float: right;
 	width: 135px;
 	display: block;
-	margin-top: 12px;
-	margin-left: 12px;
+	margin-left: 8px;
+	margin-bottom: 5px;
 }
 .task div.content div.description a.resolver:link,
 .task div.content div.description a.resolver:visited {
@@ -882,46 +858,22 @@ div.tasks_show .tasks div.content div.main .title form div.vote p.description {
 .task div.content div.description a.resolver:hover,
 .task div.content div.description a.resolver:active {
 	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fde217), to(#fde217));
-	background: -moz-linear-gradient(#fffa70, #fde217);
-	-pie-background: linear-gradient(#fffa70, #fde217);
+	background: -moz-linear-gradient(#fefa86, #fde217);
+	-pie-background: linear-gradient(#fefa86, #fde217);
 	text-shadow:1px 1px 0px #ffffff;
 	-webkit-box-shadow: #fde217 0px 0px 3px;
 	-moz-box-shadow: #fde217 0px 0px 3px;
 	box-shadow: #fde217 0px 0px 3px;
 	border: 1px solid #eed415;
 }
-.task div.content div.description a.resolver span.state {
-	float: left;
-	font-size: 10px;
-	background-color: #bac682;
-	margin-top: -3px;
-	color: #FFFFFF;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	padding-top: 1px;
-	padding-right: 4px;
-	padding-bottom: 1px;
-	padding-left: 4px;
-	background-repeat: no-repeat;
-	background-position: left bottom;
-	display: block;
-	margin-left: -1px;
-}
-.task div.content div.description a.resolver:hover span.state,
-.task div.content div.description a.resolver:active span.state {
-	text-shadow:none;
-}
 .task div.content div.description a.resolver span.name {
 	float: left;
 	font-size: 11px;
 	display: block;
-	background-image: url(../images/state_solver.png);
 	background-repeat: no-repeat;
-	background-position: 6px top;
-	padding-top: 3px;
 	clear: right;
 	width: 95px;
+	font-weight: bold;
 }
 .task div.content div.description a.resolver span.icon img {
 	height: 32px;
@@ -929,6 +881,9 @@ div.tasks_show .tasks div.content div.main .title form div.vote p.description {
 	float: left;
 	margin-right: 5px;
 	display: block;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 .task div.content div.description a.resolver:link span.icon img,
 .task div.content div.description a.resolver:visited span.icon img {
@@ -948,61 +903,103 @@ div.tasks_show .tasks div.content div.main .title form div.vote p.description {
 
 
 
-.task a.project {
-	float: left;
-	font-size: 10px;
-	width: 61px;
-	padding-top: 25px;
-	line-height: 1.3;
-}
-.task a.project a span.name {
-	display: block;
-}
-.task a.project:link span.name,
-.task a.project:visited span.name {
-	text-decoration: none !important;
-}
-.task a.project:hover span.name,
-.task a.project:active span.name {
-	text-decoration: underline;
-}
-.task a.project span.icon {
-	display: block;
-	background-color: #FFFF66;
-	margin-bottom: 3px;
-}
-.task a.project span.icon img {
-	font-size: 11px;
-	width: 60px;
-	background-color: #f7989a;
-	height: 60px;
-	border-top-width: 1px;
-	border-bottom-width: 1px;
-	border-left-width: 1px;
-	border-top-style: solid;
-	border-bottom-style: solid;
-	border-left-style: solid;
-	border-top-color: #C0C0C0;
-	border-bottom-color: #C0C0C0;
-	border-left-color: #C0C0C0;
-}
-
-.tasks_show a.project {
-	float: none;
-	font-size: 10px;
-	width: 170px;
-	padding-top: 0px;
-}
-.tasks_show a.project span.icon {
-	margin-bottom: 0px;
-}
 .task div.created_at {
 	clear: both;
 	font-size: 12px;
 	text-align: center;
-	margin-bottom: 30px;
 	color: #a2a2a2;
 }
+.task div.sponcers {
+	clear: both;
+	background-color: #e4e4e4;
+	margin-right: -10px;
+	margin-left: -10px;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#f8f8f8));
+	background: -moz-linear-gradient(#ffffff, #f8f8f8);
+	-pie-background: linear-gradient(#ffffff, #f8f8f8);
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #e5e5e5;
+	border-bottom-color: #e5e5e5;
+}
+.task div.sponcers h3 {
+	clear: both;
+	display: block;
+	font-weight: bold;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#a6ede6), to(#80DED5));
+	background: -moz-linear-gradient(#a6ede6, #80DED5);
+	-pie-background: linear-gradient(#a6ede6, #80DED5);
+}
+.task div.sponcers h3 span {
+	padding-top: 10px;
+	padding-right: 12px;
+	padding-bottom: 8px;
+	padding-left: 12px;
+	display: block;
+	background:
+				url(../images/task_project.png) repeat-x 0px 0px,
+				url(../images/white.png) repeat-x 0px -45px;
+	text-shadow:1px 1px 0px #ddfffc;
+}
+
+.task div.sponcers li {
+	clear: both;
+	display: block;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #e5e5e5;
+	background-image: url(../images/sponser.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+.task div.sponcers ul li:last-child {
+	border: none;
+}
+.task div.sponcers ul li:last-child a {
+	background-image: url(../images/sponser_last-child.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+.task div.sponcers ul li:first-child a {
+	background-image: url(../images/sponser_first-child.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+
+.task div.sponcers li a.sponcer {
+	padding: 7px;
+	display: block;
+	text-decoration: none;
+	display: block;
+}
+.task div.sponcers li a.sponcer span.icon img {
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	display: block;
+	display: block;
+	height: 32px;
+	width: 32px;
+}
+
+.task div.sponcers li a.sponcer span.name {
+	background-image: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .task ul.tags {
 	display: block;
 	padding-right: 12px;
@@ -1024,7 +1021,7 @@ div.tasks_show .tasks div.content div.main .title form div.vote p.description {
 	float: left;
 	padding-right: 10px;
 	padding-left: 10px;
-	border: 1px solid #efefef;
+	border: 1px solid #d9d9d9;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
@@ -1042,8 +1039,8 @@ div.tasks_show .tasks div.content div.main .title form div.vote p.description {
 .task ul.tags li a:hover,
 .task ul.tags li a:active {
 	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fde217), to(#fde217));
-	background: -moz-linear-gradient(#fffa70, #fde217);
-	-pie-background: linear-gradient(#fffa70, #fde217);
+	background: -moz-linear-gradient(#fefa86, #fde217);
+	-pie-background: linear-gradient(#fefa86, #fde217);
 	text-shadow:1px 1px 0px #ffffff;
 	-webkit-box-shadow: #fde217 0px 0px 3px;
 	-moz-box-shadow: #fde217 0px 0px 3px;
@@ -1053,11 +1050,11 @@ div.tasks_show .tasks div.content div.main .title form div.vote p.description {
 
 #sub {
 	float: right;
-	width: 215px;
+	width: 235px;
 }
 #sub div.tweets {
 	background-color: #ffffff;
-	border: 1px solid #DDEEF6;
+	border: 2px solid #3b99bb;
 	margin-bottom: 25px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -1067,10 +1064,11 @@ div.tasks_show .tasks div.content div.main .title form div.vote p.description {
 	box-shadow: #dcdcdc 0px 0px 5px;
 }
 #sub div.tweets h3 {
-	background-color: #DDEEF6;
+	background-color: #3b99bb;
 	padding: 10px;
 	font-weight: bold;
 	text-shadow:1px 1px 1px #FFFFFF;
+	color: #FFF;
 }
 #sub div.tweets ul {
 	padding: 10px;
@@ -1112,7 +1110,7 @@ div.tasks_show .tasks div.content div.main .title form div.vote p.description {
 
 #sub div.section {
 	background-color: #E7E7E7;
-	border: 1px solid #f3f3f3;
+	border: 1px solid #ffffff;
 	margin-bottom: 25px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -1122,10 +1120,11 @@ div.tasks_show .tasks div.content div.main .title form div.vote p.description {
 	box-shadow: #dcdcdc 0px 0px 5px;
 }
 #sub div.section h3 {
-	background-color: #f3f3f3;
+	background-color: #FFF;
 	padding: 10px;
 	font-weight: bold;
 	text-shadow:1px 1px 1px #FFFFFF;
+	font-family: 'メイリオ', "Lucida Sans Unicode", "Lucida Grande", Arial, Helvetica, HiraKakuPro-W3, HiraMaruPro-W4, "ヒラギノ角ゴ Pro W3","ヒラギノ丸ゴ Pro W4", Verdana,  Osaka, sans-serif;
 }
 #sub div.section ul {
 	padding: 10px;
@@ -1207,4 +1206,197 @@ div.tasks_show .tasks div.content div.main .title form div.vote p.description {
 
 div.pager {
 	clear: both;
+}
+.tasks_show div.comments {
+	clear: both;
+	margin-top: 25px;
+}
+.tasks_show div.comments li.comment {
+	clear: both;
+	margin-bottom: 25px;
+	display: block;
+}
+.tasks_show .comments h3 {
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+
+
+
+.comment div.content .title h4 {
+	display: block;
+	float: left;
+	width: 635px;
+}
+
+
+
+div.tasks_show form.new_vote{
+	padding-top: 25px;
+	background-image: url(../images/arrow.png);
+	background-repeat: no-repeat;
+	background-position: 662px -80px;
+	clear: both;
+	padding-bottom: 5px;
+}
+div.tasks_show form.new_vote div.vote {
+	display: block;
+	font-size: 12px;
+	clear: both;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#eeeeee), to(#e0e0e0));
+	background: -moz-linear-gradient(#eeeeee, #e0e0e0);
+	-pie-background: linear-gradient(#eeeeee, #e0e0e0);
+	padding-top: 8px;
+	padding-right: 10px;
+	padding-bottom: 8px;
+	padding-left: 10px;
+	-webkit-box-shadow: #dcdcdc 1px 1px 2px;
+	-moz-box-shadow: #dcdcdc 1px 1px 2px;
+	box-shadow: #dcdcdc 1px 1px 2px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #e0e0e0;
+	border-right-color: #b0b0b0;
+	border-bottom-color: #b0b0b0;
+	border-left-color: #e0e0e0;
+}
+div.tasks_show form.new_vote div.vote div.text {
+	width: 480px;
+	float: left;
+}
+div.tasks_show form.new_vote div.vote div.text input {
+	display: block;
+	width: 620px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background:none repeat scroll 0 0 #FCFCFC;
+	border-color:#CCCCCC #EEEEEE #EEEEEE #CCCCCC;
+	border-style:solid;
+	border-width:1px;
+	font-size: 13px;
+	line-height: 18px;
+	height: 18px;
+	padding-top: 3px;
+	padding-right: 2px;
+	padding-bottom: 3px;
+	padding-left: 2px;
+	background: -webkit-gradient(linear, 0 0, 0 5px, from(#e1e1e1), to(#f3f3f3));
+	background: -moz-linear-gradient(#e1e1e1, #f3f3f3 7%);
+	-pie-background: linear-gradient(#e1e1e1, #f3f3f3 7%);
+}
+div.tasks_show form.new_vote div.vote div.text input:focus {
+	background:none repeat scroll 0 0 #FCFCFC;
+	background: -webkit-gradient(linear, 0 0, 0 5px, from(#e1e1e1), to(#ffffff));
+	background: -moz-linear-gradient(#e1e1e1, #ffffff 4%);
+	-pie-background: linear-gradient(#e1e1e1, #ffffff 4%);
+}
+div.tasks_show form.new_vote div.vote div.button {
+	width: 37px;
+	float: right;
+}
+div.tasks_show form.new_vote div.vote div.button input {
+	width: 35px;
+	height: 24px;
+	background-color: #69e0d6;
+	display: block;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #69e0d6;
+	border-right-color: #3fbeb3;
+	border-bottom-color: #3fbeb3;
+	border-left-color: #69e0d6;
+	-webkit-box-shadow: #999999 1px 1px 1px;
+	-moz-box-shadow: #999999 1px 1px 1px;
+	box-shadow: #999999 1px 1px 1px;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#9dede6), to(#40c6bb));
+	background: -moz-linear-gradient(#9dede6, #40c6bb);
+	-pie-background: linear-gradient(#9dede6, #40c6bb);
+}
+div.tasks_show form.new_vote div.vote div.button input:focus {
+	background-color: #666666;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fde217), to(#fde217));
+	background: -moz-linear-gradient(#fefa86, #fde217);
+	-pie-background: linear-gradient(#fefa86, #fde217);
+	box-shadow: #fde217 0px 0px 3px;
+	-webkit-box-shadow: #fde217 0px 0px 3px;
+	-moz-box-shadow: #fde217 0px 0px 3px;
+	border: 1px solid #eed415;
+}
+div.tasks_show form.new_vote div.vote p.description {
+	display: block;
+	clear: both;
+	font-size: 11px;
+	text-align: center;
+	padding-bottom: 6px;
+}
+
+
+.commenter .icon {
+	display: block;
+	background-color: #fff;
+	height: 45px;
+	width: 45px;
+	float: right;
+	cursor: pointer;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	padding: 4px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #e0e0e0;
+	border-right-color: #b0b0b0;
+	border-bottom-color: #b0b0b0;
+	border-left-color: #e0e0e0;
+	-webkit-box-shadow: #ededed 1px 1px 1px;
+	-moz-box-shadow: #ccc 1px 1px 1px;
+	box-shadow: #ededed 1px 1px 1px;
+	width:39px;
+	height:39px;
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+
+.commenter .icon img {
+	width:39px;
+	height:39px;
+	display: block;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+.commenter .name {
+	line-height:22px;
+	font-size:16px;
+	display: block;
+	height: 45px;
+	float: left;
 }
